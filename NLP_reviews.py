@@ -5,6 +5,7 @@ import seaborn as sns; sns.set()
 import os
 import re
 import nltk
+import sklearn
 
 df = pd.read_csv(r'\mycode\chichi\Ulta_skincare.csv')
 df = df.dropna()
