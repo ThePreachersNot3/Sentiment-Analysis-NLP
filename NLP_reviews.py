@@ -1,3 +1,4 @@
+#importing all the needed libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,6 +8,7 @@ import re
 import nltk
 import sklearn
 
+#importing the data
 df = pd.read_csv(r'\mycode\chichi\Ulta_skincare.csv')
 df = df.dropna()
 df['Review_Text'] = df['Review_Text'].apply(lambda x: re.sub('[^a-zA-Z]', ' ', x))
